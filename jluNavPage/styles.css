@@ -78,3 +78,16 @@ footer {
   background: #eee;
   color: #555;
 }
+#ad-container {
+  width: 300px;
+  height: 250px;
+  position: fixed;
+  right: 10px; /* 右侧边距 */
+  top: 50%; /* 使其位于页面垂直方向的中间 */
+  transform: translateY(-50%); /* 垂直居中 */
+  background-color: white; /* 避免广告透明时影响页面 */
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+  padding: 10px;
+  z-index: 9999; /* 确保广告在最上层 */
+}
