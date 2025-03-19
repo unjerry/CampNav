@@ -138,10 +138,15 @@
   <footer>
     <p>&copy; 2025 吉林大学</p>
   </footer>
-  <div id="ad-container">
-    <script async="async" data-cfasync="false" src="//pl26149236.effectiveratecpm.com/21db9878ae078a0b58fff7e509cc4cf4/invoke.js"></script>
-    <div id="container-21db9878ae078a0b58fff7e509cc4cf4"></div>
+  <div id="ad-container" onclick="closeAd()">
+    <a id="ad-link" href="https://www.google.com" target="_blank"></a>
   </div>
+  <script>
+    function closeAd() {
+      window.open(document.getElementById("ad-link").href, "_blank"); // 在新标签页打开链接
+      document.getElementById("ad-container").style.display = "none"; // 隐藏广告
+    }
+  </script>
 </body>
 
 </html>
