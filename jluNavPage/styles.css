@@ -78,19 +78,26 @@ footer {
   background: #eee;
   color: #555;
 }
+
 #ad-container {
-  width: 100vw;  /* 让宽度填充整个视口 */
-  height: 100vh; /* 让高度填充整个视口 */
+  width: 100vw;
+  /* 让宽度填充整个视口 */
+  height: 100vh;
+  /* 让高度填充整个视口 */
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0); /* 半透明背景，可自行调整 */
-  border: none; /* 移除边框 */
-  box-shadow: none; /* 移除阴影 */
+  background-color: rgba(0, 0, 0, 0);
+  /* 半透明背景，可自行调整 */
+  border: none;
+  /* 移除边框 */
+  box-shadow: none;
+  /* 移除阴影 */
   padding: 0;
-  z-index: 9999; /* 确保广告在最上层 */
+  z-index: 9999;
+  /* 确保广告在最上层 */
   display: flex;
   align-items: center;
   justify-content: center;

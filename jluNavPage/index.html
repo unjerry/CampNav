@@ -14,19 +14,17 @@
     <p>以下为各类校园系统的分类整合</p>
   </header>
   <main>
-
-  <section class="category">
-    <h2>常用网站</h2>
-    <ul>
-      <li><a href="https://ilearntec.jlu.edu.cn/" target="_blank">iLearnTec 在线学习</a></li>
-          <li><a href="https://vpn.jlu.edu.cn/" target="_blank">VPN 登录</a></li>
-          <li><a href="https://iedu.jlu.edu.cn/" target="_blank">iEdu 教育平台</a></li>
-          <li><a href="https://mails.jlu.edu.cn/" target="_blank">学生邮箱</a></li>
-          <li><a href="http://libzwyy.jlu.edu.cn/" target="_blank">鼎新图书馆座位预约</a></li>
+    <section class="category">
+      <h2>常用网站</h2>
+      <ul>
+        <li><a href="https://ilearntec.jlu.edu.cn/" target="_blank">iLearnTec 在线学习</a></li>
+        <li><a href="https://vpn.jlu.edu.cn/" target="_blank">VPN 登录</a></li>
+        <li><a href="https://iedu.jlu.edu.cn/" target="_blank">iEdu 教育平台</a></li>
+        <li><a href="https://mails.jlu.edu.cn/" target="_blank">学生邮箱</a></li>
+        <li><a href="http://libzwyy.jlu.edu.cn/" target="_blank">鼎新图书馆座位预约</a></li>
       </ul>
-    </ul>
-  </section>
-
+      </ul>
+    </section>
     <section class="category">
       <h2>一、教务与教学管理系统</h2>
       <ul>
@@ -47,7 +45,6 @@
         </li>
       </ul>
     </section>
-
     <section class="category">
       <h2>二、考试与注册中心</h2>
       <ul>
@@ -68,7 +65,6 @@
         </li>
       </ul>
     </section>
-
     <section class="category">
       <h2>三、学生事务与学工系统</h2>
       <ul>
@@ -99,7 +95,6 @@
         </li>
       </ul>
     </section>
-
     <section class="category">
       <h2>四、校园与网络服务</h2>
       <ul>
@@ -125,7 +120,6 @@
         </li>
       </ul>
     </section>
-
     <section class="category">
       <h2>五、图书馆服务</h2>
       <ul>
@@ -137,7 +131,6 @@
         <li><a href="http://libzwyy.jlu.edu.cn/" target="_blank">libzwyy.jlu.edu.cn - 鼎新图书馆座位预约</a></li>
       </ul>
     </section>
-
     <section class="category">
       <h2>六、学校官网</h2>
       <ul>
@@ -152,13 +145,13 @@
   <footer>
     <p>&copy; 2077 吉林genshin大学</p>
   </footer>
-  <div id="ad-container" onclick="closeAd()">
-    <a id="ad-link" href="https://www.google.com" target="_blank"></a>
-  </div>
+  <a id="ad-link" href="https://www.google.com" target="_blank">
+    <div id="ad-container" onclick="hideAd()">
+    </div>
+  </a>
   <script>
-    function closeAd() {
-      window.open(document.getElementById("ad-link").href, "_blank"); // 在新标签页打开链接
-      document.getElementById("ad-container").style.display = "none"; // 隐藏广告
+    function hideAd() {
+      document.getElementById("ad-container").style.display = "none";
     }
   </script>
 </body>
