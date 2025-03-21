@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=1200, user-scalable=no"> -->
   <title>吉林大学导航网站</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -182,6 +183,9 @@
         section.style.display = anyVisible ? "" : "none";
       });
     }
+    window.onload = function () {
+      document.getElementById("target-section").scrollIntoView({ behavior: "smooth" });
+    };
   </script>
 </body>
 
