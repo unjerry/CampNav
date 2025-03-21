@@ -1,0 +1,50 @@
+[
+  {
+    "title": "常用网站",
+    "links": [
+      { "name": "iLearnTec 在线学习", "url": "https://ilearntec.jlu.edu.cn/" },
+      { "name": "VPN 登录", "url": "https://vpn.jlu.edu.cn/" },
+      { "name": "iEdu 教育平台", "url": "https://iedu.jlu.edu.cn/" },
+      { "name": "学生邮箱", "url": "https://mails.jlu.edu.cn/" },
+      { "name": "图书馆座位预约", "url": "http://libzwyy.jlu.edu.cn/" }
+    ]
+  },
+  {
+    "title": "教务与教学管理",
+    "links": [
+      { "name": "教务管理系统", "url": "http://uims.jlu.edu.cn" },
+      { "name": "教务处", "url": "http://jwc.jlu.edu.cn" },
+      { "name": "EOL 教学网", "url": "http://eol.jlu.edu.cn" }
+    ]
+  },
+  {
+    "title": "考试与注册中心",
+    "links": [
+      { "name": "查成绩系统", "url": "http://cjcx.jlu.edu.cn" },
+      { "name": "考试中心", "url": "http://kszx.jlu.edu.cn" },
+      { "name": "注册中心", "url": "http://registry.jlu.edu.cn" }
+    ]
+  },
+  {
+    "title": "校园服务",
+    "links": [
+      { "name": "校内通知", "url": "http://oa.jlu.edu.cn" },
+      { "name": "校园卡平台", "url": "http://dsf.jlu.edu.cn" },
+      { "name": "网络中心", "url": "http://nic.jlu.edu.cn" },
+      { "name": "校园网自助", "url": "http://ip.jlu.edu.cn" }
+    ]
+  },
+  {
+    "title": "图书馆服务",
+    "links": [
+      { "name": "图书馆官网", "url": "http://lib.jlu.edu.cn" },
+      { "name": "图书馆座位预约", "url": "http://libzwyy.jlu.edu.cn/" }
+    ]
+  },
+  {
+    "title": "学校官网",
+    "links": [
+      { "name": "吉林大学官网", "url": "https://www.jlu.edu.cn/" }
+    ]
+  }
+]
