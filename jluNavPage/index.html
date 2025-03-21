@@ -153,15 +153,8 @@
   <footer>
     <p>&copy; 2077 吉林genshin大学</p>
   </footer>
-  <!-- <a id="ad-link" href="https://www.google.com" target="_blank">
-    <div id="ad-container" onclick="hideAd()">
-    </div>
-  </a>
-  <script>
-    function hideAd() {
-      document.getElementById("ad-container").style.display = "none";
-    }
-  </script> -->
+  <div id="float-container">
+  </div>
   <script>
     function siteSearch() {
       const input = document.getElementById("search-input").value.toLowerCase();
@@ -169,7 +162,7 @@
       const links = document.querySelectorAll("main a");
       links.forEach(link => {
         // 如果链接文本中包含搜索关键词，则显示，否则隐藏
-        if(link.textContent.toLowerCase().includes(input)){
+        if (link.textContent.toLowerCase().includes(input)) {
           link.parentElement.style.display = "";
         } else {
           link.parentElement.style.display = "none";
@@ -182,7 +175,7 @@
         const items = section.querySelectorAll("ul li");
         let anyVisible = false;
         items.forEach(item => {
-          if(item.style.display !== "none"){
+          if (item.style.display !== "none") {
             anyVisible = true;
           }
         });
