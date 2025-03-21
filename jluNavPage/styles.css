@@ -102,3 +102,25 @@ footer {
   align-items: center;
   justify-content: center;
 }
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#search-box {
+  width: 300px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.feedback {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
