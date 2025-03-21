@@ -15,10 +15,10 @@
     <div class="feedback">
       <p>反馈邮箱: <a href="mailto:feedback@jlu.edu.cn">feedback@jlu.edu.cn</a></p>
     </div>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="搜索本站内容..." onkeyup="siteSearch()">
+    </div>
   </header>
-  <div class="search-container">
-    <input type="text" id="search-box" placeholder="搜索本站内容" onkeyup="searchSites()">
-  </div>
   <main>
     <section class="category">
       <h2>常用网站</h2>
@@ -151,13 +151,44 @@
   <footer>
     <p>&copy; 2077 吉林genshin大学</p>
   </footer>
-  <a id="ad-link" href="https://www.google.com" target="_blank">
+  <!-- <a id="ad-link" href="https://www.google.com" target="_blank">
     <div id="ad-container" onclick="hideAd()">
     </div>
   </a>
   <script>
     function hideAd() {
       document.getElementById("ad-container").style.display = "none";
+    }
+  </script> -->
+  <script>
+    
+
+    function siteSearch() {
+      const input = document.getElementById("search-input").value.toLowerCase();
+      // 获取所有链接
+      const links = document.querySelectorAll("main a");
+      links.forEach(link => {
+        // 如果链接文本中包含搜索关键词，则显示，否则隐藏
+        if(link.textContent.toLowerCase().includes(input)){
+          link.parentElement.style.display = "";
+        } else {
+          link.parentElement.style.display = "none";
+        }
+      });
+
+      // 对于每个分类区块，根据其子项是否都隐藏来决定是否隐藏整个分类
+      const categories = document.querySelectorAll("main .category");
+      categories.forEach(section => {
+        // 查找该分类内所有列表项
+        const items = section.querySelectorAll("ul li");
+        let anyVisible = false;
+        items.forEach(item => {
+          if(item.style.display !== "none"){
+            anyVisible = true;
+          }
+        });
+        section.style.display = anyVisible ? "" : "none";
+      });
     }
   </script>
 </body>
