@@ -18,7 +18,7 @@
     </div>
   </header>
   <main>
-    <section class="category">
+    <section class="category" id="target-section">
       <h2>常用网站</h2>
       <ul>
         <li><a href="https://ilearntec.jlu.edu.cn/" target="_blank">学在吉大xzjd - 课程回放，直播录播</a></li>
@@ -185,7 +185,50 @@
     }
     window.onload = function () {
       document.getElementById("target-section").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+  <a id="ad-link" href="https://www.google.com" target="_blank">
+    <div id="ad-container" onclick="hideAd()">
+    </div>
+  </a>
+  <script>
+    // 检查是否存在 'adClosed' cookie 且其未过期
+    window.onload = function () {
+      var adClosed = getCookie("adClosed");
+      console.log(new Date().getTime() - adClosed);
+      if (adClosed && (new Date().getTime() - adClosed < 20000)) {
+        // 如果 cookie 存在且小于20秒，则隐藏广告
+        document.getElementById("ad-container").style.display = "none";
+      } else {
+        // 如果广告已关闭超过20秒或没有cookie，显示广告
+        document.getElementById("ad-container").style.display = "block";
+      }
     };
+    function hideAd() {
+      // 隐藏广告并设置cookie
+      document.getElementById("ad-container").style.display = "none";
+
+      // 设置cookie，存储当前时间戳并设置过期时间为20秒后
+      var expirationTime = new Date().getTime() + 20000; // 当前时间 + 20秒
+      setCookie("adClosed", expirationTime, 1); // 设置1天过期，虽然20秒内有效，但为了cookie有效期设置1天
+    }
+    // 获取指定名称的cookie值
+    function getCookie(name) {
+      var value = "; " + document.cookie;
+      var parts = value.split("; " + name + "=");
+      if (parts.length === 2) return parts.pop().split(";").shift();
+      return null;
+    }
+    // 设置cookie函数
+    function setCookie(name, value, days) {
+      var expires = "";
+      if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
   </script>
 </body>
 
