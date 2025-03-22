@@ -196,7 +196,7 @@
     window.onload = function () {
       var adClosed = getCookie("adClosed");
       console.log(new Date().getTime() - adClosed);
-      if (adClosed && (new Date().getTime() - adClosed < 20000)) {
+      if (adClosed == null || (adClosed && (new Date().getTime() - adClosed < 0))) {
         // 如果 cookie 存在且小于20秒，则隐藏广告
         document.getElementById("ad-container").style.display = "none";
       } else {
